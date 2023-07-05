@@ -88,19 +88,12 @@ a {
   top: -7px;
   left: 8px;
   font-size: 12px;
+  padding: 0px 8px;
   background-color: white;
   color:#5f6368;
   border-color: #5f6368;
   display: none;
   transition: 0.5s;
-}
-
-.p-mail {
-  width: 35%;
-}
-
-.p-pass {
-  width: 46%;
 }
 
 .inputBox input:focus ~ p {
@@ -179,13 +172,5 @@ a {
     border: 0.1px solid rgba(0, 0, 0, 0.2);
     padding: 40px;
     border-radius: 10px;
-  }
-
-  .p-pass {
-    width: 35%;
-  }
-
-  .p-mail {
-    width: 25%;
   }
 }

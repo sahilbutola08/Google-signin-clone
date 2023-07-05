@@ -34,7 +34,7 @@ export default function Form() {
                 </div>  
                 <div className="inputBox">
                     <input className="input" onChange={(e) => setStatus(e.target.value?false:true)} placeholder={user?"Enter your password":"Email or Phone"} type={user?(showPass?"mail":"password"):"mail"}/>
-                    <p className={user?"placeholder p-pass":"placeholder p-mail"} style={{display: isEmpty?"":"inline"}}>{user?"Enter your password":"Email or Phone"}</p>
+                    <p className="placeholder" style={{display: isEmpty?"":"inline"}}>{user?"Enter your password":"Email or Phone"}</p>
                     {user?<span className="show-pass"><input type="checkbox" onClick={() => setShowPass(!showPass)} /><p style={{color: '#000'}}>Show Password</p></span>:<a href="/">Forgot email?</a>}
                 </div>
                 {user?"":<p>Not your computer? Use Guest mode to sign in privately. <a href="/">Learn more</a></p>}
